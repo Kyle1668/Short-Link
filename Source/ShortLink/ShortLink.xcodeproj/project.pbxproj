@@ -690,6 +690,7 @@
 				64DA1D371E6B232600711F7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		64DA1D381E6B232600711F7B /* Build configuration list for PBXNativeTarget "ShortLinkTests" */ = {
 			isa = XCConfigurationList;
@@ -698,6 +699,7 @@
 				64DA1D3A1E6B232600711F7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		64DA1D3B1E6B232600711F7B /* Build configuration list for PBXNativeTarget "ShortLinkUITests" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +708,7 @@
 				64DA1D3D1E6B232600711F7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
