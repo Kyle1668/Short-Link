@@ -10,12 +10,25 @@ import UIKit
 
 class ViewController: UIViewController , UITextViewDelegate {
     
+    
+    // Top Input Fields
     @IBOutlet weak var preText: UILabel!
-
     @IBOutlet weak var inputTextBox: UITextView!
     
+    // Arrow Image
+    @IBOutlet weak var arrowImage: UIImageView!
+    
+    // ShortenedURL PlaceHolder
+    @IBOutlet weak var urlPlaceholder: UILabel!
+    
+    // When the input field begins to be edited
     func textViewDidBeginEditing(_ textView: UITextView) {
         preText.isHidden = true
+        
+        if arrowImage.isHidden == false || urlPlaceholder.isHidden == false {
+            arrowImage.isHidden = true
+            urlPlaceholder.isHidden = true
+        }
     }
     
     func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
@@ -37,6 +50,11 @@ class ViewController: UIViewController , UITextViewDelegate {
     func textViewDidEndEditing(_ textView: UITextView) {
         if textView.text == "" {
             preText.isHidden = false
+        } else {
+            arrowImage.isHidden = false
+            urlPlaceholder.isHidden = false
+            
+            urlPlaceholder.text = inputTextBox.text
         }
     }
     
