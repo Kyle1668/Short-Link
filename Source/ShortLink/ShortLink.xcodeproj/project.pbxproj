@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DA37808E7F97E870FD543D4 /* Pods_ShortLinkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69505047EF28B75393F432F1 /* Pods_ShortLinkUITests.framework */; };
 		64DA1D111E6B232600711F7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DA1D101E6B232600711F7B /* AppDelegate.swift */; };
 		64DA1D131E6B232600711F7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DA1D121E6B232600711F7B /* ViewController.swift */; };
 		64DA1D161E6B232600711F7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64DA1D141E6B232600711F7B /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		64DA1D1B1E6B232600711F7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64DA1D191E6B232600711F7B /* LaunchScreen.storyboard */; };
 		64DA1D261E6B232600711F7B /* ShortLinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DA1D251E6B232600711F7B /* ShortLinkTests.swift */; };
 		64DA1D311E6B232600711F7B /* ShortLinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DA1D301E6B232600711F7B /* ShortLinkUITests.swift */; };
+		6E7E884C376B2BF40C2B8006 /* Pods_ShortLink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73B7CE37EBFF3B3D9971EBD /* Pods_ShortLink.framework */; };
+		E82C14FDF41B87C457AB4C52 /* Pods_ShortLinkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3ABC08055C8095E2C9610BB /* Pods_ShortLinkTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B23749EFC4DF8F81AEA3D02 /* Pods-ShortLink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShortLink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShortLink/Pods-ShortLink.debug.xcconfig"; sourceTree = "<group>"; };
+		2D995C63B9560B0792BB7C08 /* Pods-ShortLinkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShortLinkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShortLinkTests/Pods-ShortLinkTests.release.xcconfig"; sourceTree = "<group>"; };
 		64DA1D0D1E6B232600711F7B /* ShortLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShortLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64DA1D101E6B232600711F7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64DA1D121E6B232600711F7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,13 @@
 		64DA1D2C1E6B232600711F7B /* ShortLinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShortLinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64DA1D301E6B232600711F7B /* ShortLinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortLinkUITests.swift; sourceTree = "<group>"; };
 		64DA1D321E6B232600711F7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69505047EF28B75393F432F1 /* Pods_ShortLinkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShortLinkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D6D4B6DC8C72B01A1109891 /* Pods-ShortLinkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShortLinkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShortLinkUITests/Pods-ShortLinkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8426C7A3F795FBC1EB4E0701 /* Pods-ShortLinkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShortLinkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShortLinkUITests/Pods-ShortLinkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8BBFB0009453EE28EDAE0E6C /* Pods-ShortLink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShortLink.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShortLink/Pods-ShortLink.release.xcconfig"; sourceTree = "<group>"; };
+		B3ABC08055C8095E2C9610BB /* Pods_ShortLinkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShortLinkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C489248CAEB82BD8681E7003 /* Pods-ShortLinkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShortLinkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShortLinkTests/Pods-ShortLinkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C73B7CE37EBFF3B3D9971EBD /* Pods_ShortLink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShortLink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E7E884C376B2BF40C2B8006 /* Pods_ShortLink.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E82C14FDF41B87C457AB4C52 /* Pods_ShortLinkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DA37808E7F97E870FD543D4 /* Pods_ShortLinkUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				64DA1D241E6B232600711F7B /* ShortLinkTests */,
 				64DA1D2F1E6B232600711F7B /* ShortLinkUITests */,
 				64DA1D0E1E6B232600711F7B /* Products */,
+				DF9346871A88B09299A631F2 /* Pods */,
+				A6904C93D74CF85D3300FB5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = ShortLinkUITests;
 			sourceTree = "<group>";
 		};
+		A6904C93D74CF85D3300FB5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C73B7CE37EBFF3B3D9971EBD /* Pods_ShortLink.framework */,
+				B3ABC08055C8095E2C9610BB /* Pods_ShortLinkTests.framework */,
+				69505047EF28B75393F432F1 /* Pods_ShortLinkUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF9346871A88B09299A631F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B23749EFC4DF8F81AEA3D02 /* Pods-ShortLink.debug.xcconfig */,
+				8BBFB0009453EE28EDAE0E6C /* Pods-ShortLink.release.xcconfig */,
+				C489248CAEB82BD8681E7003 /* Pods-ShortLinkTests.debug.xcconfig */,
+				2D995C63B9560B0792BB7C08 /* Pods-ShortLinkTests.release.xcconfig */,
+				7D6D4B6DC8C72B01A1109891 /* Pods-ShortLinkUITests.debug.xcconfig */,
+				8426C7A3F795FBC1EB4E0701 /* Pods-ShortLinkUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64DA1D351E6B232600711F7B /* Build configuration list for PBXNativeTarget "ShortLink" */;
 			buildPhases = (
+				60E19D06A05E2148091731F3 /* [CP] Check Pods Manifest.lock */,
 				64DA1D091E6B232600711F7B /* Sources */,
 				64DA1D0A1E6B232600711F7B /* Frameworks */,
 				64DA1D0B1E6B232600711F7B /* Resources */,
+				74233487D0B166E61F9072A9 /* [CP] Embed Pods Frameworks */,
+				BA6B202FAA0B3EF714AF0E3C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64DA1D381E6B232600711F7B /* Build configuration list for PBXNativeTarget "ShortLinkTests" */;
 			buildPhases = (
+				847E6200823E4DA6621B127A /* [CP] Check Pods Manifest.lock */,
 				64DA1D1D1E6B232600711F7B /* Sources */,
 				64DA1D1E1E6B232600711F7B /* Frameworks */,
 				64DA1D1F1E6B232600711F7B /* Resources */,
+				F38BF98FB893399CE184B4D9 /* [CP] Embed Pods Frameworks */,
+				EEF1F64427DD1638D8D4D168 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64DA1D3B1E6B232600711F7B /* Build configuration list for PBXNativeTarget "ShortLinkUITests" */;
 			buildPhases = (
+				9E2716AB11A737EB43952381 /* [CP] Check Pods Manifest.lock */,
 				64DA1D281E6B232600711F7B /* Sources */,
 				64DA1D291E6B232600711F7B /* Frameworks */,
 				64DA1D2A1E6B232600711F7B /* Resources */,
+				196FEDB3AD013C6CA818374D /* [CP] Embed Pods Frameworks */,
+				A200A1B20FCEE90126D2436A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		196FEDB3AD013C6CA818374D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShortLinkUITests/Pods-ShortLinkUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60E19D06A05E2148091731F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		74233487D0B166E61F9072A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShortLink/Pods-ShortLink-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		847E6200823E4DA6621B127A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9E2716AB11A737EB43952381 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A200A1B20FCEE90126D2436A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShortLinkUITests/Pods-ShortLinkUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA6B202FAA0B3EF714AF0E3C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShortLink/Pods-ShortLink-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEF1F64427DD1638D8D4D168 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShortLinkTests/Pods-ShortLinkTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F38BF98FB893399CE184B4D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShortLinkTests/Pods-ShortLinkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		64DA1D091E6B232600711F7B /* Sources */ = {
@@ -406,6 +593,7 @@
 		};
 		64DA1D361E6B232600711F7B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B23749EFC4DF8F81AEA3D02 /* Pods-ShortLink.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShortLink/Info.plist;
@@ -418,6 +606,7 @@
 		};
 		64DA1D371E6B232600711F7B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BBFB0009453EE28EDAE0E6C /* Pods-ShortLink.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShortLink/Info.plist;
@@ -430,6 +619,7 @@
 		};
 		64DA1D391E6B232600711F7B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C489248CAEB82BD8681E7003 /* Pods-ShortLinkTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ShortLinkTests/Info.plist;
@@ -443,6 +633,7 @@
 		};
 		64DA1D3A1E6B232600711F7B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D995C63B9560B0792BB7C08 /* Pods-ShortLinkTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ShortLinkTests/Info.plist;
@@ -456,6 +647,7 @@
 		};
 		64DA1D3C1E6B232600711F7B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D6D4B6DC8C72B01A1109891 /* Pods-ShortLinkUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ShortLinkUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -468,6 +660,7 @@
 		};
 		64DA1D3D1E6B232600711F7B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8426C7A3F795FBC1EB4E0701 /* Pods-ShortLinkUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ShortLinkUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -497,6 +690,7 @@
 				64DA1D371E6B232600711F7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		64DA1D381E6B232600711F7B /* Build configuration list for PBXNativeTarget "ShortLinkTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +699,7 @@
 				64DA1D3A1E6B232600711F7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		64DA1D3B1E6B232600711F7B /* Build configuration list for PBXNativeTarget "ShortLinkUITests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +708,7 @@
 				64DA1D3D1E6B232600711F7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
