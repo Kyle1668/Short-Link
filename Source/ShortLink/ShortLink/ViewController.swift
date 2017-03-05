@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController , UITextViewDelegate {
     
+    private var urlModel: AppURL = AppURL()
     
     // Top Input Fields
     @IBOutlet weak var preText: UILabel!
@@ -48,13 +49,21 @@ class ViewController: UIViewController , UITextViewDelegate {
     }
     
     func textViewDidEndEditing(_ textView: UITextView) {
+        
         if textView.text == "" {
             preText.isHidden = false
         } else {
+            
+            urlModel.initializeLongURL(inURL: inputTextBox.text!)
+            NSLog(urlModel.url)
+            
             arrowImage.isHidden = false
             urlPlaceholder.isHidden = false
             
-            urlPlaceholder.text = inputTextBox.text
+            urlModel.shortenURL(longURL: inputTextBox.text!, handler: { (url) in
+                self.urlPlaceholder.text = url
+            })
+            
         }
     }
     
