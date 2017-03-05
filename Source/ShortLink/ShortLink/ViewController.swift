@@ -70,6 +70,13 @@ class ViewController: UIViewController , UITextViewDelegate {
     
     @IBAction func pressURL(_ sender: UIButton) {
         UIPasteboard.general.string = urlModel.shortURL
+        
+        let alert = UIAlertController.init(title: "Short Link", message: "short link copied!", preferredStyle: .alert)
+        self.present( alert, animated: true, completion: nil)
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { (Timer) in
+            alert.dismiss(animated: true, completion: nil)
+        }
+        
     }
     
     override func viewDidLoad() {
