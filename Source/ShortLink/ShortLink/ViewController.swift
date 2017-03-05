@@ -56,15 +56,15 @@ class ViewController: UIViewController , UITextViewDelegate {
         } else {
             
             urlModel.initializeLongURL(inURL: inputTextBox.text!)
-            NSLog(urlModel.url)
-            
-            arrowImage.isHidden = false
-            shortenURL.isHidden = false
-            
             urlModel.shortenURL(longURL: inputTextBox.text!, handler: { (url) in
+                self.arrowImage.isHidden = false
+                self.shortenURL.isHidden = false
                 self.shortenURL.setTitle(url, for: .normal)
+            }, errorHandler: { (error) in
+                let alert = UIAlertController.init(title: "Short Link", message: "Invalid URL", preferredStyle: .alert)
+                alert.addAction( UIAlertAction.init(title: "Dismiss", style: .default, handler: nil))
+                self.present( alert, animated: true, completion: nil)
             })
-            
         }
     }
     
@@ -81,7 +81,6 @@ class ViewController: UIViewController , UITextViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 

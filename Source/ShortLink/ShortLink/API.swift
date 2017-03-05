@@ -4,19 +4,21 @@ import AFNetworking
 
 class AppURL {
     
-     var url: String
-     var shortURL: String
+    var url: String
+    var shortURL: String
+    var shortError: Bool
     
     init() {
         url = ""
         shortURL = ""
+        shortError = false
     }
     
     func initializeLongURL(inURL: String) {
         url = inURL
     }
     
-    func shortenURL(longURL: String, handler: @escaping (String) -> Swift.Void) {
+    func shortenURL(longURL: String, handler: @escaping (String) -> Swift.Void, errorHandler: @escaping (String) -> Swift.Void) {
         
         let manager = AFHTTPSessionManager()
         manager.requestSerializer = AFJSONRequestSerializer()
@@ -33,6 +35,8 @@ class AppURL {
             
         }, failure: { (task : URLSessionDataTask?, Error) in
             NSLog("\(Error)")
+            errorHandler(Error.localizedDescription)
+            self.shortError = true
         })
         
     }
