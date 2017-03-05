@@ -69,7 +69,7 @@ class ViewController: UIViewController , UITextViewDelegate {
     }
     
     @IBAction func pressURL(_ sender: UIButton) {
-        
+        UIPasteboard.general.string = urlModel.shortURL
     }
     
     override func viewDidLoad() {
