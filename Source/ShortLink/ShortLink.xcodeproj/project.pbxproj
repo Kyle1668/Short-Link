@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2DA37808E7F97E870FD543D4 /* Pods_ShortLinkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69505047EF28B75393F432F1 /* Pods_ShortLinkUITests.framework */; };
+		647364AB1E6B88180021BE16 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647364AA1E6B88180021BE16 /* API.swift */; };
 		64DA1D111E6B232600711F7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DA1D101E6B232600711F7B /* AppDelegate.swift */; };
 		64DA1D131E6B232600711F7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DA1D121E6B232600711F7B /* ViewController.swift */; };
 		64DA1D161E6B232600711F7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64DA1D141E6B232600711F7B /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		0B23749EFC4DF8F81AEA3D02 /* Pods-ShortLink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShortLink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShortLink/Pods-ShortLink.debug.xcconfig"; sourceTree = "<group>"; };
 		2D995C63B9560B0792BB7C08 /* Pods-ShortLinkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShortLinkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShortLinkTests/Pods-ShortLinkTests.release.xcconfig"; sourceTree = "<group>"; };
+		647364AA1E6B88180021BE16 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		64DA1D0D1E6B232600711F7B /* ShortLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShortLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64DA1D101E6B232600711F7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64DA1D121E6B232600711F7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				64DA1D171E6B232600711F7B /* Assets.xcassets */,
 				64DA1D191E6B232600711F7B /* LaunchScreen.storyboard */,
 				64DA1D1C1E6B232600711F7B /* Info.plist */,
+				647364AA1E6B88180021BE16 /* API.swift */,
 			);
 			path = ShortLink;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64DA1D131E6B232600711F7B /* ViewController.swift in Sources */,
+				647364AB1E6B88180021BE16 /* API.swift in Sources */,
 				64DA1D111E6B232600711F7B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

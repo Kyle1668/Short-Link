@@ -19,17 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         sleep(2)
         
-        let manager = AFHTTPSessionManager()
-        manager.requestSerializer = AFJSONRequestSerializer()
-        
-        let url = "https://www.googleapis.com/urlshortener/v1/url?key=AIzaSyBRKKil8-hhE8SXdUv9SnYWRV-u2DTjxgs"
-        let params : [String : String] = ["longUrl" : "https://drive.google.com/drive/folders/0B3w_oG_fvJvqTFU4d1RRWERJczQ?usp=sharing"]
-        manager.post( url, parameters: params, progress: nil, success: { (URLSessionDataTask, AnyObject) -> Swift.Void in
-            NSLog("\(AnyObject.debugDescription)")
-        }, failure: { (task : URLSessionDataTask?, Error) in
-            NSLog("\(Error)")
-        })
-        
         return true
     }
 

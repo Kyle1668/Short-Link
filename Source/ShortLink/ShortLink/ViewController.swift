@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController , UITextViewDelegate {
     
+    private var urlModel: AppURL = AppURL()
     
     // Top Input Fields
     @IBOutlet weak var preText: UILabel!
@@ -18,16 +19,17 @@ class ViewController: UIViewController , UITextViewDelegate {
     // Arrow Image
     @IBOutlet weak var arrowImage: UIImageView!
     
-    // ShortenedURL PlaceHolder
-    @IBOutlet weak var urlPlaceholder: UILabel!
+    // ShortenedURL button
+    @IBOutlet var shortenURL: UIButton!
+    
     
     // When the input field begins to be edited
     func textViewDidBeginEditing(_ textView: UITextView) {
         preText.isHidden = true
         
-        if arrowImage.isHidden == false || urlPlaceholder.isHidden == false {
+        if arrowImage.isHidden == false || shortenURL.isHidden == false {
             arrowImage.isHidden = true
-            urlPlaceholder.isHidden = true
+            shortenURL.isHidden = true
         }
     }
     
@@ -48,14 +50,26 @@ class ViewController: UIViewController , UITextViewDelegate {
     }
     
     func textViewDidEndEditing(_ textView: UITextView) {
+        
         if textView.text == "" {
             preText.isHidden = false
         } else {
-            arrowImage.isHidden = false
-            urlPlaceholder.isHidden = false
             
-            urlPlaceholder.text = inputTextBox.text
+            urlModel.initializeLongURL(inURL: inputTextBox.text!)
+            urlModel.shortenURL(longURL: inputTextBox.text!, handler: { (url) in
+                self.arrowImage.isHidden = false
+                self.shortenURL.isHidden = false
+                self.shortenURL.setTitle(url, for: .normal)
+            }, errorHandler: { (error) in
+                let alert = UIAlertController.init(title: "Short Link", message: "Invalid URL", preferredStyle: .alert)
+                alert.addAction( UIAlertAction.init(title: "Dismiss", style: .default, handler: nil))
+                self.present( alert, animated: true, completion: nil)
+            })
         }
+    }
+    
+    @IBAction func pressURL(_ sender: UIButton) {
+        UIPasteboard.general.string = urlModel.shortURL
     }
     
     override func viewDidLoad() {
@@ -67,7 +81,6 @@ class ViewController: UIViewController , UITextViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
