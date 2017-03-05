@@ -19,16 +19,17 @@ class ViewController: UIViewController , UITextViewDelegate {
     // Arrow Image
     @IBOutlet weak var arrowImage: UIImageView!
     
-    // ShortenedURL PlaceHolder
-    @IBOutlet weak var urlPlaceholder: UILabel!
+    // ShortenedURL button
+    @IBOutlet var shortenURL: UIButton!
+    
     
     // When the input field begins to be edited
     func textViewDidBeginEditing(_ textView: UITextView) {
         preText.isHidden = true
         
-        if arrowImage.isHidden == false || urlPlaceholder.isHidden == false {
+        if arrowImage.isHidden == false || shortenURL.isHidden == false {
             arrowImage.isHidden = true
-            urlPlaceholder.isHidden = true
+            shortenURL.isHidden = true
         }
     }
     
@@ -58,13 +59,17 @@ class ViewController: UIViewController , UITextViewDelegate {
             NSLog(urlModel.url)
             
             arrowImage.isHidden = false
-            urlPlaceholder.isHidden = false
+            shortenURL.isHidden = false
             
             urlModel.shortenURL(longURL: inputTextBox.text!, handler: { (url) in
-                self.urlPlaceholder.text = url
+                self.shortenURL.setTitle(url, for: .normal)
             })
             
         }
+    }
+    
+    @IBAction func pressURL(_ sender: UIButton) {
+        
     }
     
     override func viewDidLoad() {
