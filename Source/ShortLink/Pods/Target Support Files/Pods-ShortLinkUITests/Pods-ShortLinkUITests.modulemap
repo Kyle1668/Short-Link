@@ -1,0 +1,6 @@
+framework module Pods_ShortLinkUITests {
+  umbrella header "Pods-ShortLinkUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

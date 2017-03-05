@@ -1,0 +1,6 @@
+framework module Pods_ShortLink {
+  umbrella header "Pods-ShortLink-umbrella.h"
+
+  export *
+  module * { export * }
+}
