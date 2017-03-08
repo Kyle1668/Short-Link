@@ -25,12 +25,14 @@ class ViewController: UIViewController , UITextViewDelegate {
     
     // When the input field begins to be edited
     func textViewDidBeginEditing(_ textView: UITextView) {
+        
         preText.isHidden = true
         
         if arrowImage.isHidden == false || shortenURL.isHidden == false {
             arrowImage.isHidden = true
             shortenURL.isHidden = true
         }
+        
     }
     
     func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
@@ -60,19 +62,23 @@ class ViewController: UIViewController , UITextViewDelegate {
                 self.arrowImage.isHidden = false
                 self.shortenURL.isHidden = false
                 self.shortenURL.setTitle(url, for: .normal)
+                
             }, errorHandler: { (error) in
+                
                 let alert = UIAlertController.init(title: "Short Link", message: "Invalid URL", preferredStyle: .alert)
                 alert.addAction( UIAlertAction.init(title: "Dismiss", style: .default, handler: nil))
                 self.present( alert, animated: true, completion: nil)
+                
             })
         }
     }
     
     @IBAction func pressURL(_ sender: UIButton) {
-        UIPasteboard.general.string = urlModel.shortURL
         
+        UIPasteboard.general.string = urlModel.shortURL
         let alert = UIAlertController.init(title: "Short Link", message: "short link copied!", preferredStyle: .alert)
         self.present( alert, animated: true, completion: nil)
+        
         Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { (Timer) in
             alert.dismiss(animated: true, completion: nil)
         }
