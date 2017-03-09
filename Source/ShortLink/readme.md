@@ -10,5 +10,5 @@ This project was developed and presented at the 20th North Bay Make-A-Thon
 
 ##### Team
 - [Kyle O'Brien](https://www.linkedin.com/in/kyle1668/) [[Github]](https://github.com/kyle1668): Front-end interface and view development.
-- [Erick Sanchez](goo.gl/QRB4Et) [[Github]](https://github.com/LinnierGames): Back-end API implementation.
+- [Erick Sanchez](https://www.linkedin.com/in/erick-sanchez-estrada-84083171/) [[Github]](https://github.com/LinnierGames): Back-end API implementation.
 
