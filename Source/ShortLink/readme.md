@@ -4,9 +4,10 @@
 ![alt text](http://i.imgur.com/SI8UIbh.png "ShortLink Logo" )
 
 
-ShortLink is a lightweight iOS application that shortens an entered URL into a brief more versatile form. This is done using Google's URL Shortener API and is received with JSON. 
+ShortLink is a lightweight iOS application that shortens an entered URL into a brief more versatile form. This is done using [Google's URL Shortener API](https://developers.google.com/url-shortener/) and is received with JSON. 
 
-This project was developed and presented at the 20th North Bay Make-A-Thon
+This project was developed and presented at the 2017 North Bay Make-A-Thon
+
 
 ##### Team
 - [Kyle O'Brien](https://www.linkedin.com/in/kyle1668/) [[Github]](https://github.com/kyle1668): Front-end interface and view development.
