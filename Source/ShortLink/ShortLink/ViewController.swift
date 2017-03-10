@@ -60,6 +60,7 @@ class ViewController: UIViewController , UITextViewDelegate {
             urlModel.initializeLongURL(inURL: inputTextBox.text!)
             urlModel.shortenURL(longURL: inputTextBox.text!, handler: { (url) in
                 self.arrowImage.isHidden = false
+                self.animateArrow()
                 self.shortenURL.isHidden = false
                 self.shortenURL.setTitle(url, for: .normal)
                 
@@ -71,6 +72,21 @@ class ViewController: UIViewController , UITextViewDelegate {
                 
             })
         }
+    }
+    
+    func animateArrow() {
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (Timer) in
+            if (self.arrowImage.isHidden) {
+                Timer.invalidate()
+            }
+            UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseIn, animations: {
+                self.arrowImage.transform = self.arrowImage.transform.translatedBy(x: 0, y: -10)
+            }, completion: nil)
+            UIView.animate(withDuration: 0.5, delay: 0.5, options: .curveEaseInOut, animations: {
+                self.arrowImage.transform = self.arrowImage.transform.translatedBy(x: 0, y: 10)
+            }, completion: nil)
+        }.fire()
+        
     }
     
     @IBAction func pressURL(_ sender: UIButton) {
