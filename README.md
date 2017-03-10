@@ -12,6 +12,8 @@ ShortLink is a lightweight iOS application that shortens an entered URL into a b
 
 This project was developed and presented at the 2017 North Bay Make-A-Thon
 
+[Demo Video (Youtube)](https://www.youtube.com/watch?v=YyQUnyz_Sw4)
+
 ### The technologies
 >[Google's URL Shortener API][google api] using Google's algorithm to return the shorten url
 
