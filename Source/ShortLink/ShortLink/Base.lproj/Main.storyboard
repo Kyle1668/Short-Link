@@ -61,7 +61,7 @@
                                                 <rect key="frame" x="20" y="20" width="374" height="103"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <color key="textColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go"/>
                                                 <dataDetectorType key="dataDetectorTypes" address="YES"/>
                                                 <connections>
@@ -103,7 +103,8 @@
                                         <rect key="frame" x="0.0" y="333" width="414" height="395"/>
                                         <subviews>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oV-Gq-s8Y">
-                                                <rect key="frame" x="20" y="8" width="374" height="30"/>
+                                                <rect key="frame" x="20" y="8" width="374" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
